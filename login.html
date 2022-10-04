@@ -15,17 +15,19 @@
             <!-- Titre h1 Authentification-->
        <h1 class="h1 text-primary text-center my-5">Page d'authentification</h1>
        <!-- Formulaire de login -->
-       <form class="my-5">
+       <form class="my-5" action="login.js" method="get">
            <div class="form-group">
              <label for="mail">E-mail :</label>
-             <input type="email" class="form-control" id="mail" aria-describedby="emailHelp" placeholder="Saisissez votre adress e-mail ici">
+             <input type="email" class="form-control is-invalid" id="mail" aria-describedby="emailHelp" placeholder="Saisissez votre adress e-mail ici">
+             <div class="d-block invalid-feedback"></div>
            </div>
            <!-- input type password #pw-->
            <div class="form-group">
              <label for="pw">Mot de passe :</label>
-             <input type="password" class="form-control" id="pw" placeholder="Saisissez votre mot de passe ici">
+             <input type="password" class="form-control is-invalid" id="pw" placeholder="Saisissez votre mot de passe ici">
+             <div class="d-block invalid-feedback"></div>
            </div>
-           <button type="submit" class="btn btn-success text-white btn-block">Connexion</button>
+           <button id="connexion" type="submit" class="btn btn-success text-white btn-block">Connexion</button>
          </form>
          <div class="text-center my-3">
             <a href="register.html">s'inscrire</a>
@@ -45,6 +47,6 @@
     integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
     crossorigin="anonymous"></script>
     <!-- app.js-->  
-    <script src="js/app.js"></script>  
+    <script src="js/login.js"></script>  
 </body>
 </html>
