@@ -10,6 +10,42 @@
     <title>Inscription</title>
 </head>
 <body>
+    <div class="container justify-content-center">
+        <!-- Formulaire d'inscription-->
+        <form class="justify-content-center">
+            <h1 class="text-center text-primary my-4">Créer votre compte</h1>
+            <!-- input type text #nom-->
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" class="form-control" id="nom" placeholder="Saisissez votre nom ici"
+                    required>
+            </div>
+             <!-- input type text #prenom-->
+            <div class="form-group">
+                <label for="prenom">Prénom:</label>
+                <input type="text" class="form-control" id="prenom" placeholder="Saisissez votre prénom ici"
+                    required>
+            </div>
+             <!-- input type email #inputEmail-->
+            <div class="form-group">
+                <label for="inputEmail">E-mail :</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Saisissez votre adresse e-mail ici"
+                    required>
+            </div>
+            <!-- input type password #password-->
+            <div class="form-group">
+                <label for="password">Mot de passe:</label>
+                <input type="password" class="form-control" id="password" placeholder="Saisissez votre  mot de passe ici" required>
+            </div>
+            <!-- input type password #confirm-->
+            <div class="form-group">
+                <label for="confirm">Confirmation mot de passe :</label>
+                <input type="password" class="form-control" id="confirm" placeholder="Saisissez votre  mot de passe ici" required>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">S'inscrire</button>
+        </form>
+    </div>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
