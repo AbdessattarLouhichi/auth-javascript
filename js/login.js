@@ -1,46 +1,38 @@
-var mail = document.getElementById('mail');
-var pw = document.getElementById('pw');
-var button = document.querySelector('button');
+function login(e) {
+    e.preventDefault();
+    var email = document.getElementById('email');
+    var pw = document.getElementById('pw');
 
+    if ((email.value =="") ||(!email.value.includes('@'))) {
+        email.classList.remove('is-valid')
+        email.classList.add('is-invalid')
+       
 
-var mailValid = false;
-var pwValid = false;
-
-
-// validation adress mail
-mail.addEventListener('keydown',function(){
-    let result = mail.value.includes('@')
-    let next = mail.nextElementSibling;
-    if ((mail.value.length != 0) &&(result)) {
-        mail.classList.replace('is-invalid','is-valid');
-        next.innerHTML ="valide!";
-        next.classList.replace('invalid-feedback','valid-feedback');
-        mailValid = true;
-    } 
-    
-})
-
-// validation pw
-pw.addEventListener('keydown',function(){
-   let next = pw.nextElementSibling;
-    if (pw.value.length != 0) {
-        pw.classList.replace('is-invalid','is-valid');
-        next.innerHTML ="valide!";
-        next.classList.replace('invalid-feedback','valid-feedback');
-        pwValid = true;
-    } 
-})
-
-
-    button.addEventListener('click',function login(e) {
+    } else{
+        email.classList.remove('is-invalid')
+        email.classList.add('is-valid')
+    }
+    if (pw.value =="") {
+        pw.classList.remove('is-valid')
+        pw.classList.add('is-invalid')
         
-        if((mailValid == false) || (pwValid == false)){
-            alert("veuillez remplir les champs obligatoires!")
-            e.preventDefault();
-        }
-    })
-    
+    }else{
+        pw.classList.remove('is-invalid')
+        pw.classList.add('is-valid')
+    }
 
- if (localStorage.getItem('user')) {
-    window.open('dashboard.html');
- }
+var users = JSON.parse(localStorage.getItem('users')) || []
+ 
+var userFound = users.find((user)=> user.email === email.value && user.password === pw.value)
+console.log(userFound);
+if (userFound == undefined) {
+   alert('verify your email or password')
+}else{
+    
+    window.location.href = 'dashboard.html'
+}
+}
+
+var button = document.querySelector('button');
+button.addEventListener('click',login)
+

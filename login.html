@@ -15,17 +15,17 @@
             <!-- Titre h1 Authentification-->
        <h1 class="h1 text-primary text-center my-5">Page d'authentification</h1>
        <!-- Formulaire de login -->
-       <form class="my-5" action="#" method="get">
+       <form class="my-5">
            <div class="form-group">
              <label for="mail">E-mail :</label>
-             <input type="email" class="form-control is-invalid" id="mail" aria-describedby="emailHelp" placeholder="Saisissez votre adress e-mail ici">
-             <div class="d-block invalid-feedback"></div>
+             <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Saisissez votre adress e-mail ici">
+             <div class="invalid-feedback">L'adresse e-mail est invalid</div>
            </div>
            <!-- input type password #pw-->
            <div class="form-group">
              <label for="pw">Mot de passe :</label>
-             <input type="password" class="form-control is-invalid" id="pw" placeholder="Saisissez votre mot de passe ici">
-             <div class="d-block invalid-feedback"></div>
+             <input type="password" class="form-control" id="pw" placeholder="Saisissez votre mot de passe ici">
+             <div class="invalid-feedback">Le mot de passe est obligatoire</div>
            </div>
            <button id="connexion" type="submit" class="btn btn-success text-white btn-block">Connexion</button>
          </form>

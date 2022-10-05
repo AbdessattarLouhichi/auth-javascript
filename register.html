@@ -12,40 +12,40 @@
 <body>
     <div class="container justify-content-center">
         <!-- Formulaire d'inscription-->
-        <form class="justify-content-center" action="#" method="get">
+        <form class="justify-content-center" >
             <h1 class="text-center text-primary my-4">Créer votre compte</h1>
             <!-- input type text #nom-->
             <div class="form-group">
                 <label for="nom">Nom :</label>
-                <input type="text" class="form-control is-invalid" id="nom" placeholder="Saisissez votre nom ici"
-                    required>
-                <div class="d-block invalid-feedback">Le nom est obligatoire.</div>
+                <input type="text" class="form-control" id="nom" placeholder="Saisissez votre nom ici"
+                    >
+                <div class="invalid-feedback">Le nom est obligatoire.</div>
             </div>
              <!-- input type text #prenom-->
             <div class="form-group">
                 <label for="prenom">Prénom:</label>
-                <input type="text" class="form-control is-invalid" id="prenom" placeholder="Saisissez votre prénom ici"
-                    required>
-                <div class="d-block invalid-feedback">Le prénom est obligatoire.</div>
+                <input type="text" class="form-control" id="prenom" placeholder="Saisissez votre prénom ici"
+                    >
+                <div class="invalid-feedback">Le prénom est obligatoire.</div>
             </div>
              <!-- input type email #inputEmail-->
             <div class="form-group">
                 <label for="inputEmail">E-mail :</label>
-                <input type="email" class="form-control is-invalid" id="inputEmail" placeholder="Saisissez votre adresse e-mail ici"
-                    required>
-                <div class="d-block invalid-feedback">L'adresse e-mail est invalid</div>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Saisissez votre adresse e-mail ici"
+                    >
+                <div class="invalid-feedback">L'adresse e-mail est invalid</div>
             </div>
             <!-- input type password #password-->
             <div class="form-group">
                 <label for="password">Mot de passe:</label>
-                <input type="password" class="form-control is-invalid" id="password" placeholder="Saisissez votre  mot de passe ici" required>
-                <div class="d-block invalid-feedback">Le mot de passe est obligatoire.</div>
+                <input type="password" class="form-control" id="password" placeholder="Saisissez votre  mot de passe ici" >
+                <div class="invalid-feedback">Le mot de passe est obligatoire.</div>
             </div>
             <!-- input type password #confirm-->
             <div class="form-group">
                 <label for="confirmPw">Confirmation mot de passe :</label>
-                <input type="password" class="form-control is-invalid" id="confirmPw" placeholder="Saisissez votre  mot de passe ici" required>
-                <div class="d-block invalid-feedback">La confirmation est obligaoire, ou bien la confirmation est invalid</div>
+                <input type="password" class="form-control" id="confirmPw" placeholder="Saisissez votre  mot de passe ici" >
+                <div class="invalid-feedback">La confirmation est obligaoire, ou bien la confirmation est invalid</div>
             </div>
             <button id="inscrire" type="submit" class="btn btn-success btn-block">S'inscrire</button>
         </form>
