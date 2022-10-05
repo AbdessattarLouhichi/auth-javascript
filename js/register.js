@@ -76,5 +76,8 @@ confirmPw.addEventListener('keydown',function(){
             e.preventDefault();
         }
     })
-    
+
+    function setNewUser() {
+        localStorage.setItem('','')
+    }
 
