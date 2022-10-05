@@ -42,5 +42,5 @@ pw.addEventListener('keydown',function(){
     
 
  if (localStorage.getItem('user')) {
-    window.open('dashboard.html')
+    window.open('dashboard.html');
  }

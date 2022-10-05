@@ -78,7 +78,7 @@ confirmPw.addEventListener('keydown',function(){
 
     button.addEventListener('click',function register(e) {
         if((NomValid == false) || (PrValid == false) || (EmailValid == false) || (passValid == false) || (confValid == false)){
-            alert("veuillez remplir les champs obligatoires!")
+            alert("veuillez remplir les champs obligatoires!");
             e.preventDefault();
         }
     })
