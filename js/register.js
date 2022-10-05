@@ -12,7 +12,10 @@ var EmailValid = false;
 var passValid =false;
 var confValid = false;
 
-
+function setNewUser(user) {
+        
+    localStorage.setItem('user',user.value);
+}
 //inscription
 // validation du nom
 nom.addEventListener('keydown',function(){
@@ -22,6 +25,7 @@ nom.addEventListener('keydown',function(){
         next.innerHTML ="valide!";
         next.classList.replace('invalid-feedback','valid-feedback');
         NomValid = true;
+        setNewUser(nom);
     }
 })
 
@@ -33,6 +37,7 @@ prenom.addEventListener('keydown',function(){
         next.innerHTML ="valide!";
         next.classList.replace('invalid-feedback','valid-feedback');
         PrValid = true;
+        setNewUser(prenom);
     }
 })
 // validation d'adresse mail
@@ -44,6 +49,7 @@ inputEmail.addEventListener('keydown',function(){
         next.innerHTML ="valide!";
         next.classList.replace('invalid-feedback','valid-feedback');
         EmailValid = true;
+        setNewUser(inputEmail);
     }
 })
 
@@ -77,7 +83,5 @@ confirmPw.addEventListener('keydown',function(){
         }
     })
 
-    function setNewUser() {
-        localStorage.setItem('','')
-    }
+  
 

@@ -41,6 +41,6 @@ pw.addEventListener('keydown',function(){
     })
     
 
- if (localStorage.getItem('')) {
-    window.open('dashborad.html')
+ if (localStorage.getItem('user')) {
+    window.open('dashboard.html')
  }
